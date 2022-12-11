@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>BMI Calculator</title>
+      <link rel="stylesheet" href="css/style-bmi.css" />
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <ul>
+         <a href="CalculaterNumber.html"><li>Go to calculate Number</li></a>
+         <a href="bmi.html"><li>Go to calculate BMI</li></a>
+         <a href="currancy.html"><li>Go to calculate currancy</li></a>
+         <a href="timer.html"><li>Go to stop wathch</li></a>
+      </ul>
+      <div class="calculator-container">
+         <div>
+            <div>
+               <h1>BMI CALCULATOR</h1>
+               <div>
+                  <p class="type">Height in meters:</p>
+                  <input
+                     id="hight"
+                     class="height-input-field"
+                     type="text"
+                     autofocus
+                  />
+               </div>
+               <div>
+                  <p class="type">weight in kilograms:</p>
+                  <input id="weight" class="weight-input-field" type="text" />
+               </div>
+               <br />
+               <button id="calc" class="calculate">Calculate</button>
+            </div>
+            <h3 id="result" class="result"></h3>
+            <div id="statement" class="result-statement"></div>
+         </div>
+      </div>
+      <script src="js/bmi.js"></script>
+   </body>
+</html>

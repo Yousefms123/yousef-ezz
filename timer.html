@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style-time.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Timer</title>
+   </head>
+   <body>
+      <ul>
+         <a href="CalculaterNumber.html"><li>Go to calculate Number</li></a>
+         <a href="bmi.html"><li>Go to calculate BMI</li></a>
+         <a href="currancy.html"><li>Go to calculate currancy</li></a>
+         <a href="timer.html"><li>Go to stop wathch</li></a>
+      </ul>
+      <div class="container">
+         <div>
+            <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+            <button id="start-btn" onclick="clickStart()">Start</button>
+            <button id="stop-btn" onclick="clickStop()">Stop</button>
+            <button id="reset-btn" onclick="clickRest()">Reset</button>
+         </div>
+      </div>
+      <script src="js/timer.js"></script>
+   </body>
+</html>

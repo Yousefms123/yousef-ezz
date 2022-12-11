@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Calculater currancy</title>
+      <link rel="stylesheet" href="css/style-cuur.css" />
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <ul>
+         <a href="CalculaterNumber.html"><li>Go to calculate Number</li></a>
+         <a href="bmi.html"><li>Go to calculate BMI</li></a>
+         <a href="currancy.html"><li>Go to calculate currancy</li></a>
+         <a href="timer.html"><li>Go to stop wathch</li></a>
+      </ul>
+      <div class="container">
+         <div class="calculater">
+            <div class="output">
+               <input type="text" id="calculate" placeholder="0" autofocus />
+               <p id="calculateResult"></p>
+            </div>
+            <div>
+               <button class="button" onclick="cleanlastone()">Delete</button>
+               <button class="button" onclick="cleanall()">C</button>
+            </div>
+            <div>
+               <button class="currncy" onclick="ShtoD()">
+                  Shekels into US Dollars
+               </button>
+               <button class="currncy" onclick="DtoSh()">
+                  Dollar into Shekels
+               </button>
+               <button class="currncy" onclick="ShtoE()">
+                  Shekel into Euros
+               </button>
+               <button class="currncy" onclick="EtoSh()">
+                  Euros into Shekels
+               </button>
+            </div>
+         </div>
+      </div>
+      <script src="js/currancy.js"></script>
+   </body>
+</html>

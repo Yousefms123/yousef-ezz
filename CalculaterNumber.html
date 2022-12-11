@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=, initial-scale=1.0" />
+      <title>Calculator</title>
+      <link rel="stylesheet" href="css/style-calcNum.css" />
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <ul>
+         <a href="CalculaterNumber.html"><li>Go to calculate Number</li></a>
+         <a href="bmi.html"><li>Go to calculate BMI</li></a>
+         <a href="currancy.html"><li>Go to calculate currancy</li></a>
+         <a href="timer.html"><li>Go to stop wathch</li></a>
+      </ul>
+      <div class="result-input">
+         <input type="number" id="result" placeholder="0" />
+      </div>
+      <div class="calc-style">
+         <div>
+            <button id="1" onclick="values(1)">1</button>
+            <button id="2" onclick="values(2)">2</button>
+            <button id="3" onclick="values(3)">3</button>
+            <br />
+            <button id="4" onclick="values(4)">4</button>
+            <button id="5" onclick="values(5)">5</button>
+            <button id="6" onclick="values(6)">6</button>
+            <br />
+            <button id="7" onclick="values(7)">7</button>
+            <button id="8" onclick="values(8)">8</button>
+            <button id="9" onclick="values(9)">9</button>
+            <br />
+            <button id="0" class="width" onclick="values(0)">0</button>
+            <button class="width" id="clear">C</button>
+            <br />
+            <button id="=" class="width-all" onclick="functionOperat()">
+               =
+            </button>
+         </div>
+         <div class="math-side">
+            <button id="del" onclick="deleted()">Del</button>
+            <button id="*" onclick="operations('*')">*</button>
+            <button id="-" onclick="operations('-')">-</button>
+            <button id="+" onclick="operations('+')">+</button>
+            <button id="/" onclick="operations('/')">/</button>
+         </div>
+      </div>
+      <script src="js/calculate.js"></script>
+   </body>
+</html>
